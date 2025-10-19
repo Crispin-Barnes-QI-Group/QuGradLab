@@ -24,10 +24,11 @@ conda install -c conda-forge libstdcxx-ng
 ### Requirements
 
 Requires:
-- [QuGrad](https://QuGrad.readthedocs.io) ([doi:10.5281/zenodo.17116721](https://doi.org/10.5281/zenodo.17116721))
-- [PySTE](https://PySTE.readthedocs.io) ([doi:10.5281/zenodo.17116431](https://doi.org/10.5281/zenodo.17116431))
-- [TensorFlow](https://www.tensorflow.org)
-- [NumPy](https://numpy.org)
+- [QuGrad](https://QuGrad.readthedocs.io) (== 1.*) ([doi:10.5281/zenodo.17116721](https://doi.org/10.5281/zenodo.17116721))
+- [PySTE](https://PySTE.readthedocs.io) (== 1.*) ([doi:10.5281/zenodo.17116431](https://doi.org/10.5281/zenodo.17116431))
+- [TensorFlow](https://www.tensorflow.org) (== 2.*)
+- [NumPy](https://numpy.org) (>= 1.21, < 3)
+- [SciPy](https://scipy.org/) (== 1.*)
 
 #### Additional requirements for testing
 
@@ -44,4 +45,4 @@ Source code can be found at: [https://github.com/Christopher-K-Long/QuGradLab](h
 
 ## Version and Changes
 
-The current version is [`0.1.1`](ChangeLog.md#release-011). Please see the [Change Log](ChangeLog.md) for more details. QuGradLab uses [semantic versioning](https://semver.org/).
+The current version is [`0.1.2`](ChangeLog.md#release-012). Please see the [Change Log](ChangeLog.md) for more details. QuGradLab uses [semantic versioning](https://semver.org/).
