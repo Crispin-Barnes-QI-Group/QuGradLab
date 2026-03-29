@@ -174,7 +174,7 @@ class Controls(Device):
         number_channels = [drive_frequencies.shape[0]]*2 \
                          +[1] * 3 * (drive_frequencies.shape[0] - 1)
         drive_ctrl_amp = self._rescale_rabi_drive(drive_ctrl_amp)
-        J_ctrl_amp = self._rescale_J(J_ctrl_amp)
+        J_ctrl_amp = self.rescale_J(J_ctrl_amp)
         ctrl_amp = tf.concat([drive_ctrl_amp,
                               tf.math.conj(1j*drive_ctrl_amp),
                               J_ctrl_amp,
