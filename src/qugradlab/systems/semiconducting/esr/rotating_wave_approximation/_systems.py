@@ -101,9 +101,13 @@ class SpinChain(Controls, QubitSystem):
         J_XX_YY = 0.5**3*np.multiply.outer(connectivity, np.diag([1, 1, 0]))
         # Check the minus sign convention in the below definition. is it XY-YX
         #   or YX-XY
-        J_XY_YX = 0.5**3*np.multiply.outer(connectivity, np.array([[ 0, 1, 0],
-                                                                   [-1, 0, 0],
-                                                                   [ 0, 0, 0]]))
+
+        # Henrik copied the next equation from the old esr_rwa -> gives me back my old results.
+        J_XY_YX = 0.5**3*np.multiply.outer((np.einsum("ij,j...->ij...", np.eye(spins, spins, 0), np.eye(spins, spins, 1))
+                                -np.einsum("ij,j...->ij...", np.eye(spins, spins, 1), np.eye(spins, spins, -1)))[:-1],
+                                np.array([[0, 1, 0], 
+                                          [-1, 0, 0], 
+                                          [0, 0, 0]]))
         # one factor of 0.5 is for double counting, the other two are the
         #   factors of two differences between spin operators and Pauli
         #   operators
