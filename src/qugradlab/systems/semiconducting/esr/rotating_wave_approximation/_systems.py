@@ -82,7 +82,7 @@ class SpinChain(Controls, QubitSystem):
                           max_drive_strength,
                           J_min,
                           J_max)
-        single_qubit_drift_coefficients = np.zeros((self.spins, 3))
+        single_qubit_drift_coefficients = np.zeros((spins, 3))
             
         single_qubit_ctrl_coefficients = \
             np.stack([np.array([[1/4, 0, 0]]*spins),
