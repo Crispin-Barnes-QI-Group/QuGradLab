@@ -102,7 +102,6 @@ class SpinChain(Controls, QubitSystem):
         # Check the minus sign convention in the below definition. is it XY-YX
         #   or YX-XY
 
-        # Henrik copied the next equation from the old esr_rwa -> gives me back my old results.
         J_XY_YX = 0.5**3*np.multiply.outer((np.einsum("ij,j...->ij...", np.eye(spins, spins, 0), np.eye(spins, spins, 1))
                                 -np.einsum("ij,j...->ij...", np.eye(spins, spins, 1), np.eye(spins, spins, -1)))[:-1],
                                 np.array([[0, 1, 0], 
