@@ -49,4 +49,4 @@ Releases from this repository are assigned DOIs and  can be found at [https://do
 
 ## Version and Changes
 
-The current version is [`0.1.2`](ChangeLog.md#release-012). Please see the [Change Log](ChangeLog.md) for more details. QuGradLab uses [semantic versioning](https://semver.org/).
+The current version is [`0.2.0`](ChangeLog.md#release-020). Please see the [Change Log](ChangeLog.md) for more details. QuGradLab uses [semantic versioning](https://semver.org/).

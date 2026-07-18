@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "qugradlab"
-version = "0.1.2"
+version = "0.2.0"
 authors = [
   { name="Christopher K. Long", email="ckl45@cam.ac.uk" },
   { name="Henrik Gothen"},
